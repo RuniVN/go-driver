@@ -45,6 +45,11 @@ func (r *httpJSONResponse) StatusCode() int {
 	return r.resp.StatusCode
 }
 
+// RawResponse returns a raw response
+func (r *httpJSONResponse) RawResponse() []byte {
+	return r.rawResponse
+}
+
 // Endpoint returns the endpoint that handled the request.
 func (r *httpJSONResponse) Endpoint() string {
 	u := *r.resp.Request.URL

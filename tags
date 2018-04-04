@@ -1,0 +1,57 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+-net	Makefile	/^		--net=container:$(TESTCONTAINER)-ns \\$/;"	m
+ARANGOARGS	Makefile	/^	ARANGOARGS := --server.jwt-secret=\/jwtsecret$/;"	m
+ARANGODB	Makefile	/^	ARANGODB := arangodb\/arangodb:latest$/;"	m
+ARANGOENV	Makefile	/^	ARANGOENV := -e ARANGO_NO_AUTH=1$/;"	m
+ARANGOENV	Makefile	/^	ARANGOENV := -e ARANGO_ROOT_PASSWORD=rootpw $/;"	m
+ARANGOENV	Makefile	/^	ARANGOENV := -e ARANGO_ROOT_PASSWORD=rootpw$/;"	m
+ARANGOVOL	Makefile	/^	ARANGOVOL := -v "$(JWTSECRETFILE):\/jwtsecret"$/;"	m
+CLUSTERENV	Makefile	/^	CLUSTERENV := JWTSECRET=testing$/;"	m
+CLUSTERENV	Makefile	/^	CLUSTERENV := SSL=auto $(CLUSTERENV)$/;"	m
+DBCONTAINER	Makefile	/^	DBCONTAINER := $(TESTCONTAINER)-db$/;"	m
+GOBUILDDIR	Makefile	/^GOBUILDDIR := $(SCRIPTDIR)\/.gobuild$/;"	m
+GOPATH	Makefile	/^	GOPATH=$(GOBUILDDIR) go get github.com\/arangodb\/go-velocypack$/;"	m
+GOPATH	Makefile	/^	GOPATH=$(GOBUILDDIR) go get github.com\/coreos\/go-iptables\/iptables$/;"	m
+GOVERSION	Makefile	/^GOVERSION := 1.9.2-alpine$/;"	m
+JWTSECRET	Makefile	/^	JWTSECRET := testing$/;"	m
+JWTSECRETFILE	Makefile	/^	JWTSECRETFILE := $(TMPDIR)\/$(TESTCONTAINER)-jwtsecret$/;"	m
+ORGDIR	Makefile	/^ORGDIR := $(GOBUILDDIR)\/src\/$(ORGPATH)$/;"	m
+ORGPATH	Makefile	/^ORGPATH := github.com\/arangodb$/;"	m
+PROJECT	Makefile	/^PROJECT := go-driver$/;"	m
+REPODIR	Makefile	/^REPODIR := $(ORGDIR)\/$(REPONAME)$/;"	m
+REPONAME	Makefile	/^REPONAME := $(PROJECT)$/;"	m
+REPOPATH	Makefile	/^REPOPATH := $(ORGPATH)\/$(REPONAME)$/;"	m
+ROOTDIR	Makefile	/^ROOTDIR := $(shell cd $(SCRIPTDIR) && pwd)$/;"	m
+SCRIPTDIR	Makefile	/^SCRIPTDIR := $(shell pwd)$/;"	m
+SOURCES	Makefile	/^SOURCES := $(shell find . -name '*.go')$/;"	m
+STARTER	Makefile	/^	STARTER := arangodb\/arangodb-starter:latest$/;"	m
+TAGS	Makefile	/^	TAGS := $/;"	m
+TAGS	Makefile	/^	TAGS := -bench=. -run=notests -cpu=1,2,4$/;"	m
+TAGS	Makefile	/^	TAGS := -tags auth$/;"	m
+TESTCONTAINER	Makefile	/^	TESTCONTAINER := $(PROJECT)-test$/;"	m
+TESTOPTIONS	Makefile	/^	TESTOPTIONS := $/;"	m
+TESTS	Makefile	/^	TESTS := $(REPOPATH) $(REPOPATH)\/test$/;"	m
+TESTS	Makefile	/^	TESTS := $(REPOPATH)\/test$/;"	m
+TESTVERBOSEOPTIONS	Makefile	/^	TESTVERBOSEOPTIONS := -v$/;"	m
+TEST_AUTHENTICATION	Makefile	/^	TEST_AUTHENTICATION := $/;"	m
+TEST_AUTHENTICATION	Makefile	/^	TEST_AUTHENTICATION := basic:root:$/;"	m
+TEST_AUTHENTICATION	Makefile	/^	TEST_AUTHENTICATION := basic:root:rootpw$/;"	m
+TEST_AUTHENTICATION	Makefile	/^	TEST_AUTHENTICATION := jwt:root:$/;"	m
+TEST_AUTHENTICATION	Makefile	/^	TEST_AUTHENTICATION := jwt:root:rootpw$/;"	m
+TEST_CONTENT_TYPE	Makefile	/^	TEST_CONTENT_TYPE := vpack$/;"	m
+TEST_ENDPOINTS	Makefile	/^	TEST_ENDPOINTS := $(TEST_ENDPOINTS_OVERRIDE)$/;"	m
+TEST_ENDPOINTS	Makefile	/^	TEST_ENDPOINTS := http:\/\/localhost:7001$/;"	m
+TEST_ENDPOINTS	Makefile	/^	TEST_ENDPOINTS := http:\/\/localhost:8529$/;"	m
+TEST_ENDPOINTS	Makefile	/^	TEST_ENDPOINTS = https:\/\/localhost:7001$/;"	m
+TEST_NET	Makefile	/^	TEST_NET := container:$(DBCONTAINER)$/;"	m
+TEST_NET	Makefile	/^	TEST_NET := container:$(TESTCONTAINER)-ns$/;"	m
+TEST_NET	Makefile	/^	TEST_NET := host $/;"	m
+TMPDIR	Makefile	/^TMPDIR := $(GOBUILDDIR)$/;"	m
+VST11_CLUSTER_TESTS	Makefile	/^	VST11_CLUSTER_TESTS := run-tests-cluster-vst-1.1$/;"	m
+VST11_RESILIENTSINGLE_TESTS	Makefile	/^	VST11_RESILIENTSINGLE_TESTS := run-tests-resilientsingle-vst-1.1$/;"	m
+VST11_SINGLE_TESTS	Makefile	/^	VST11_SINGLE_TESTS := run-tests-single-vst-1.1$/;"	m
